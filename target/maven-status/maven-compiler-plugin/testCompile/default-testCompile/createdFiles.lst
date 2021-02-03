@@ -1,0 +1,5 @@
+suporte\Generator.class
+suporte\Screenshot.class
+tests\InformacoesUsuarioPageObjectTest.class
+suporte\Web.class
+tests\InformacoesUsuarioTest.class

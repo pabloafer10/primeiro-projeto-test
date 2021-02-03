@@ -1,0 +1,6 @@
+pages\LoginFormPage.class
+pages\AddContactPage.class
+pages\BasePage.class
+pages\LoginPages.class
+pages\MePage.class
+pages\SecretPage.class
