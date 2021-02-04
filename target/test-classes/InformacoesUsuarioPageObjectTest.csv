@@ -1,5 +1,5 @@
-testAddUtestAddUmaInformacaoAdicionalDoUsuario,login,senha,tipo,contato,mensagem
-"",julio0001,123456,Phone,+5511987654321,Your contact has been added!
-"",julio0001,123456,Phone,+5511912345678,Your contact has been added!
-"",julio0001,123456,E-mail,testando123@test.com,Your contact has been added!
-"",julio0001,123456,E-mail,testando456@test.com,Your contact has been added!
+testAddUmaInformacaoAdicionalDoUsuario,login,senha,tipo,contato,mensagem
+                                      ,julio0001,123456,Phone,+551123455432,Your contact has been added!
+                                      ,julio0001,123456,Phone,+551198765432,Your contact has been added!
+                                      ,julio0001,123456,E-mail,testando1@test.com,Your contact has been added!
+                                      ,julio0001,123456,E-mail,testando2@test.com,Your contact has been added!

@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPages;
 import suporte.Web;
-
 import static org.junit.Assert.*;
 
 @RunWith(DataDrivenTestRunner.class)
@@ -20,7 +19,7 @@ public class InformacoesUsuarioPageObjectTest {
 
     @Before
     public void setUp() {
-        navegador = Web.createChrome();
+        navegador = Web.createBrowserStack();
     }
 
     @Test
@@ -31,13 +30,14 @@ public class InformacoesUsuarioPageObjectTest {
              @Param(name="contato")String contato,
              @Param(name="mensagem")String mensagemEsperada
     ) {
+
         String textoToast = new LoginPages(navegador)
-                .clickSignIn()
+                .clicarSignIn()
                 .fazerLogin(login, senha)
-                .clickMe()
-                .clickAbaMoreDataAboutYou()
-                .clickBotaoAddMoreDataAboutYou()
-                .adicionarContato(tipo, contato)
+                .clicarMe()
+                .clicarAbaMoreDataAboutYou()
+                .clicarBotaoAddMoreDataAboutYou()
+                .addContato(tipo, contato)
                 .capturarTextoToast();
 
         assertEquals(mensagemEsperada, textoToast);

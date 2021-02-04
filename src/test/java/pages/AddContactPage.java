@@ -5,8 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddContactPage extends BasePage{
-
+public class AddContactPage extends BasePage {
     public AddContactPage(WebDriver navegador) {
         super(navegador);
     }
@@ -30,13 +29,9 @@ public class AddContactPage extends BasePage{
         return new MePage(navegador);
     }
 
-    public MePage adicionarContato(String tipo, String contato) {
-        escolherTipoDeContato(tipo);
-        digitarContato(contato);
-        clicarSalvar();
-
-        return new MePage(navegador);
+    public MePage addContato(String tipo, String contato) {
+        return escolherTipoDeContato(tipo)
+                .digitarContato(contato)
+                .clicarSalvar();
     }
-
-
 }

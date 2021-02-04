@@ -118,6 +118,6 @@ public class InformacoesUsuarioTest {
     @After
     public void tearDown() {
         //Fechar navegador
-        navegador.quit();
+        navegador.close();
     }
 }

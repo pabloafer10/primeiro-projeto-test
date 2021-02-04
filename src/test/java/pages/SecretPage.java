@@ -9,7 +9,7 @@ public class SecretPage extends BasePage {
         super(navegador);
     }
 
-    public MePage clickMe() {
+    public MePage clicarMe() {
         navegador.findElement(By.className("me")).click();
 
         return new MePage(navegador);

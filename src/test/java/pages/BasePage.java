@@ -15,4 +15,3 @@ public class BasePage {
         return navegador.findElement(By.id("toast-container")).getText();
     }
 }
-
