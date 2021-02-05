@@ -16,7 +16,7 @@ public class Web {
 
     public static WebDriver createChrome() {
         // Abrindo o navegador
-        System.setProperty("webdriver.chrome.driver", "/Users/julio.lima/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\pablo\\drivers\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
