@@ -1,9 +1,0 @@
-testAddUmaInformacaoAdicionalDoUsuario,tipo,contato,mensagem
-                                      ,Phone,+551123455432,Your contact has been added!
-                                      ,Phone,+551198765432,Your contact has been added!
-                                      ,E-mail,testando1@test.com,Your contact has been added!
-                                      ,E-mail,testando2@test.com,Your contact has been added!
-removerUmContatoDeUmUsuario,telefone,mensagem
-                                 ,+551123455432,"Rest in peace, dear phone!"
-removerUmContatoDeUmUsuario,E-mail,mensagem
-                                 ,testando1@test.com,"Rest in peace, dear phone!"
