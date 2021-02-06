@@ -47,8 +47,6 @@ public class Web {
             System.out.println("Houveram problemas com a URL: " + e.getMessage());
         }
 
-
-
         return navegador;
     }
 }

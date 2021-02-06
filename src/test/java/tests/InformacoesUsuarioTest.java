@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.*;
 
 @RunWith(DataDrivenTestRunner.class)
-@DataLoader(filePaths = "InformacoesUsuarioTestData.csv")
+@DataLoader(filePaths = "InformacoesUsuarioTest.csv")
 public class InformacoesUsuarioTest {
     private WebDriver navegador;
 
@@ -50,11 +50,11 @@ public class InformacoesUsuarioTest {
         //Identicar formulário de login
         WebElement formularioSignInBox = navegador.findElement(By.id("signinbox"));
 
-        //Digitar no campo com name "login" que está dentro do formulário id "Signinbox" o texto "julio0001"
-        formularioSignInBox.findElement(By.name("login")).sendKeys("julio0001");
+        //Digitar no campo com name "login" que está dentro do formulário id "Signinbox" o texto "Nome do Usuário"
+        formularioSignInBox.findElement(By.name("login")).sendKeys("pabloafer10");
 
-        //Digitar no campo com name "password" que está dentro do formulário id "Signinbox" o texto "123456"
-        formularioSignInBox.findElement(By.name("password")).sendKeys("123456");
+        //Digitar no campo com name "password" que está dentro do formulário id "Signinbox" o texto "Senha de Usuário"
+        formularioSignInBox.findElement(By.name("password")).sendKeys("101010");
 
         //Clicar no link com name "SIGN IN"
         navegador.findElement(By.linkText("SIGN IN")).click();
@@ -67,7 +67,7 @@ public class InformacoesUsuarioTest {
     }
 
     @Test
-    public void testAddUmaInformacaoAdicionalDoUsuario(@Param(name = "tipo")String tipo, @Param(name = "contato")String contato, @Param(name = "mensagem")String mensagemEsperada) {
+    public void testAdicionarUmaInformacaoAdicionalDoUsuario(@Param(name = "tipo")String tipo, @Param(name = "contato")String contato, @Param(name = "mensagem")String mensagemEsperada) {
         //Clicar no botão através do seu xpath //button[@data-target="addmoredata"]
         navegador.findElement(By.xpath("//button[@data-target=\"addmoredata\"]")).click();
 
@@ -78,7 +78,7 @@ public class InformacoesUsuarioTest {
         WebElement campoType = popupAddMoreData.findElement(By.name("type"));
         new Select(campoType).selectByVisibleText(tipo);
 
-        //No campo de name "contact" digitar "+5511999998855"
+        //No campo de name "contact" digitar "Número de telefone"
         popupAddMoreData.findElement(By.name("contact")).sendKeys(contato);
 
         //No link de text "SAVE" que está na popup
@@ -104,7 +104,7 @@ public class InformacoesUsuarioTest {
         assertEquals("Rest in peace, dear phone!", mensagem);
 
         //Tirando print do test
-        String screenshotArquivo = "C:\\Users\\pablo\\test-report\\taskit/" + Generator.dataHoraParaArquivo() + test.getMethodName() +".png";
+        String screenshotArquivo = "C:\\Users\\pablo\\test-report\\taskit\\" + Generator.dataHoraParaArquivo() + test.getMethodName() +".png";
         Screenshot.tirar(navegador, screenshotArquivo);
 
         //Aguardar até 10 segubdos para que janela desapareça
@@ -118,6 +118,6 @@ public class InformacoesUsuarioTest {
     @After
     public void tearDown() {
         //Fechar navegador
-        navegador.close();
+        navegador.quit();
     }
 }

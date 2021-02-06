@@ -21,13 +21,13 @@ public class LoginFormPage extends BasePage {
         return this;
     }
 
-    public SecretPage clicarSignIn() {
+    public SecretaPage clicarSignIn() {
         navegador.findElement(By.linkText("SIGN IN")).click();
 
-        return new SecretPage(navegador);
+        return new SecretaPage(navegador);
     }
 
-    public SecretPage fazerLogin(String login, String senha) {
+    public SecretaPage fazerLogin(String login, String senha) {
         return digitarLogin(login)
                 .digitarSenha(senha)
                 .clicarSignIn();

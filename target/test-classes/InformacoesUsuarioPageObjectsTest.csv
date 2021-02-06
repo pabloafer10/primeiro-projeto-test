@@ -1,0 +1,9 @@
+testAdicionarUmaInformacaoAdicionalDoUsuario,login,senha,tipo,contato,mensagem,Duration(ms)
+"",pabloafer10,101010,Phone,+5511989894567,Your contact has been added!,3918.0
+"",pabloafer10,101010,Phone,+5511989891132,Your contact has been added!,3865.0
+"",pabloafer10,101010,E-mail,teste01@teste.com,Your contact has been added!,3828.0
+"",pabloafer10,101010,E-mail,teste02@teste.com,Your contact has been added!,3838.0
+removerUmContatoDeUmUsuario,telefone,mensagem
+"",+5511989891132,"Rest in peace, dear phone!"
+removerUmContatoDeUmUsuario,E-mail,mensagem
+"",teste02@teste.com,"Rest in peace, dear email!"
