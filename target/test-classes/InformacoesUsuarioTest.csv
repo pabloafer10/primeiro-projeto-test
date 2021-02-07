@@ -1,6 +1,5 @@
-testAdicionarUmaInformacaoAdicionalDoUsuario,	tipo,	contato,	mensagem
-                                            ,	Phone,	+5511987653210,	Your contact has been added!
-                                            ,	Phone,	 +551123455432,	Your contact has been added!
-                                            ,	E-mail,	teste01@teste.com.br,	Your contact has been added!
-                                            ,	E-mail,	teste02@teste.com.br,	Your contact has been added!
-
+testAdicionarUmaInformacaoAdicionalDoUsuario,tipo,contato,mensagem,Duration(ms)
+"",Phone,+5511987653210,Your contact has been added!,1015.0
+"",Phone,+551123455432,Your contact has been added!,1451.0
+"",E-mail,teste01@teste.com.br,Your contact has been added!,1424.0
+"",E-mail,teste02@teste.com.br,Your contact has been added!,1312.0
