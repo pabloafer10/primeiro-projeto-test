@@ -1,8 +1,5 @@
-testAdicionarUmaInformacaoAdicionalDoUsuario,	login,	senha,	tipo,	contato,	mensagem
-                                            ,pabloafer10,	101010,Phone,+5511989894567,Your contact has been added!
-                                            ,pabloafer10,	101010,Phone,+5511989891132,Your contact has been added!
-                                            ,pabloafer10,	101010,E-mail,teste01@teste.com,Your contact has been added!
-                                            ,pabloafer10,	101010,E-mail,teste02@teste.com,Your contact has been added!
-
-
-
+testAdicionarUmaInformacaoAdicionalDoUsuario,login,senha,tipo,contato,mensagem,Duration(ms),Duration(ms)
+"",pabloafer10,101010,Phone,+5511989894567,Your contact has been added!,3946.0,3946.0
+"",pabloafer10,101010,Phone,+5511989891132,Your contact has been added!,4611.0,4611.0
+"",pabloafer10,101010,E-mail,teste01@teste.com,Your contact has been added!,3638.0,3638.0
+"",pabloafer10,101010,E-mail,teste02@teste.com,Your contact has been added!,3733.0,3733.0
